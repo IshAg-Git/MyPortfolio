@@ -1,0 +1,310 @@
+$desktop: 1430px;
+@mixin desktop {
+    @media (max-width: #{$desktop}) {
+        @content;
+    }
+}
+
+$tablet1: 1200px;
+@mixin tablet1 {
+    @media (max-width: #{$tablet1}) {
+        @content;
+    }
+}
+
+$tablet2: 850px;
+@mixin tablet2 {
+    @media (max-width: #{$tablet2}) {
+        @content;
+    }
+}
+
+$tablet3: 640px;
+@mixin tablet3 {
+    @media (max-width: #{$tablet3}) {
+        @content;
+    }
+}
+
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC);
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+@import url(https://fonts.googleapis.com/css?family=Courier+Prime);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav-bar {
+    background-color: rgba(0, 0, 0);
+    width: 100%;
+    height: 10vh;
+}
+
+.nav-list {
+    color: white;
+    font-family: "Courier Prime";
+    font-size: 3vh;
+    padding: 1.75% 0 0 18%;
+    @include desktop {
+        font-size: 3vh;
+        padding: 2% 0 0 18%;
+    }
+    @include tablet1 {
+        font-size: 2.5vh;
+        padding: 3% 0 0 18%;
+    }
+    @include tablet2 {
+        font-size: 2.5vh;
+        padding: 4% 0 0 8%;
+    }
+    @include tablet3 {
+        font-size: 2vh;
+        padding: 6% 0 0 5%;
+    }
+}
+
+.list {
+    display: inline;
+    padding: 1rem 4rem;
+    @include desktop {
+        font-size: 3vh;
+        padding: 2rem 2rem;
+    }
+    @include tablet1 {
+        font-size: 2.5vh;
+        padding: 4rem 1rem;
+    }
+    @include tablet2 {
+        font-size: 2.5vh;
+        padding: 6rem 1rem;
+    }
+    @include tablet3 {
+        font-size: 2vh;
+        padding: 6rem 0.5rem;
+    }
+}
+
+.list:hover {
+    background-color: white;
+    color: black;
+}
+
+.link {
+    text-decoration: none;
+    color: wheat;
+}
+
+.link:hover {
+    color: black;
+}
+
+.main {
+    background-image: linear-gradient(to right, rgba(192, 10, 110, 0.7), rgba(181, 97, 2, 0.7), rgba(253, 221, 170, 0.7));
+    width: 100%;
+    height: 90vh;
+    @include desktop {
+        height: 120vh;
+    }
+    @include tablet1 {
+        height: 120vh;
+    }
+    @include tablet2 {
+        height: 120vh;
+    }
+    @include tablet3 {
+        height: 100vh;
+    }
+}
+
+.head {
+    animation: heading 2s ease;
+    margin-top: 10%;
+    margin-left: -2%;
+    width: 50%;
+    text-align: right;
+    font-size: 20vh;
+    float: left;
+    font-family: "Poiret One";
+    font-weight: 900;
+    letter-spacing: -1.8vh;
+    @include desktop {
+        font-size: 16vh;
+        margin-left: -5%;
+        margin-top: 18%;
+        letter-spacing: -1.3vh;
+    }
+    @include tablet1 {
+        font-size: 12vh;
+        margin-left: -1%;
+        margin-top: 25%;
+        letter-spacing: -1vh;
+    }
+    @include tablet2 {
+        font-size: 10vh;
+        margin-left: -1%;
+        margin-top: 30%;
+        letter-spacing: -1vh;
+    }
+    @include tablet3 {
+        font-size: 9vh;
+        margin-left: 0%;
+        margin-top: 40%;
+        letter-spacing: -0.4vh;
+    }
+}
+
+@keyframes heading {
+    to {
+        opacity: 1;
+    }
+    from {
+        opacity: 0;
+        letter-spacing: 10vh;
+    }
+}
+
+.sub {
+    width: 50%;
+    float: right;
+}
+
+.intro {
+    font-family: "amatic sc";
+    font-size: 200%;
+    font-weight: 700;
+    margin-top: 5%;
+    letter-spacing: 0.2vh;
+    @include desktop {
+        font-size: 200%;
+        margin-top: 5%;
+    }
+    @include tablet1 {
+        font-size: 170%;
+        margin-top: 25%;
+        margin-left: 5%;
+    }
+    @include tablet2 {
+        font-size: 150%;
+        margin-top: 35%;
+        margin-left: 5%;
+    }
+    @include tablet3 {
+        font-size: 110%;
+        margin-top: 25%;
+        margin-left: 5%;
+    }
+}
+
+.icon1 {
+    float: left;
+    padding-left: 20%;
+}
+
+.icon1:hover {
+    transform: scale(0.8);
+}
+
+.icon2 {
+    float: left;
+    margin-top: 10%;
+    padding-left: 20%;
+}
+
+.icon2:hover {
+    transform: scale(0.8);
+}
+
+.fb {
+    font-size: 23vh;
+    color: #112f76;
+    @include desktop {
+        font-size: 16vh;
+        margin-left: -40%;
+    }
+    @include tablet1 {
+        font-size: 14vh;
+        margin-left: 10%;
+    }
+    @include tablet2 {
+        font-size: 12vh;
+        margin-left: 50%;
+    }
+    @include tablet3 {
+        font-size: 10vh;
+        margin-left: 50%;
+    }
+}
+
+.lin {
+    font-size: 23vh;
+    color: #21567E;
+    @include desktop {
+        font-size: 16vh;
+        margin-left: 10%;
+    }
+    @include tablet1 {
+        font-size: 14vh;
+        margin-left: 10%;
+    }
+    @include tablet2 {
+        font-size: 12vh;
+        margin-left: 10%;
+    }
+    @include tablet3 {
+        font-size: 10vh;
+        margin-left: 10%;
+    }
+}
+
+.git {
+    font-size: 23vh;
+    color: black;
+    @include desktop {
+        font-size: 16vh;
+        margin-left: -40%;
+    }
+    @include tablet1 {
+        font-size: 14vh;
+        margin-left: 10%;
+    }
+    @include tablet2 {
+        font-size: 12vh;
+        margin-left: 50%;
+    }
+    @include tablet3 {
+        font-size: 10vh;
+        margin-left: 70%;
+    }
+}
+
+.mail {
+    font-size: 23vh;
+    color: #F14236;
+    @include desktop {
+        font-size: 16vh;
+        margin-left: 10%;
+    }
+    @include tablet1 {
+        font-size: 14vh;
+        margin-left: 10%;
+    }
+    @include tablet2 {
+        font-size: 12vh;
+        margin-left: 10%;
+    }
+    @include tablet3 {
+        font-size: 10vh;
+        margin-left: 10%;
+    }
+}

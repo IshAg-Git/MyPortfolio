@@ -1,0 +1,352 @@
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC);
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+@import url(https://fonts.googleapis.com/css?family=Courier+Prime);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url(bg2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 16px;
+}
+
+.nav-bar {
+  background-color: black;
+  width: 100%;
+  height: 10vh;
+}
+
+.nav-list {
+  color: white;
+  font-family: "Courier Prime";
+  font-size: 3vh;
+  padding: 1.75% 0 0 18%;
+}
+@media (max-width: 1430px) {
+  .nav-list {
+    font-size: 3vh;
+    padding: 2% 0 0 18%;
+  }
+}
+@media (max-width: 1200px) {
+  .nav-list {
+    font-size: 2.5vh;
+    padding: 3% 0 0 18%;
+  }
+}
+@media (max-width: 850px) {
+  .nav-list {
+    font-size: 2.5vh;
+    padding: 4% 0 0 8%;
+  }
+}
+@media (max-width: 640px) {
+  .nav-list {
+    font-size: 2vh;
+    padding: 6% 0 0 5%;
+  }
+}
+
+.list {
+  display: inline;
+  padding: 1% 4%;
+}
+@media (max-width: 1430px) {
+  .list {
+    font-size: 3vh;
+    padding: 2rem 2rem;
+  }
+}
+@media (max-width: 1200px) {
+  .list {
+    font-size: 2.5vh;
+    padding: 4rem 1rem;
+  }
+}
+@media (max-width: 850px) {
+  .list {
+    font-size: 2.5vh;
+    padding: 6rem 1rem;
+  }
+}
+@media (max-width: 640px) {
+  .list {
+    font-size: 2vh;
+    padding: 6rem 0.5rem;
+  }
+}
+
+.list:hover {
+  background-color: white;
+  color: black;
+}
+
+.link {
+  text-decoration: none;
+  color: wheat;
+}
+
+.link:hover {
+  color: black;
+}
+
+.main {
+  background-image: linear-gradient(to right, rgba(255, 200, 0, 0.6), rgba(2, 121, 181, 0.7), rgba(73, 0, 137, 0.7));
+  width: 100%;
+  height: 90vh;
+}
+@media (max-width: 1430px) {
+  .main {
+    height: 120vh;
+  }
+}
+@media (max-width: 1200px) {
+  .main {
+    height: 120vh;
+  }
+}
+@media (max-width: 850px) {
+  .main {
+    height: 120vh;
+  }
+}
+@media (max-width: 640px) {
+  .main {
+    height: 100vh;
+  }
+}
+
+.head {
+  -webkit-animation: heading 2s ease;
+          animation: heading 2s ease;
+  margin-left: -8%;
+  margin-top: 8%;
+  width: 50%;
+  text-align: right;
+  font-size: 23vh;
+  float: left;
+  font-family: "Poiret One";
+  font-weight: 900;
+  letter-spacing: -1.5vh;
+}
+@media (max-width: 1430px) {
+  .head {
+    font-size: 18vh;
+    margin-left: -5%;
+    margin-top: 12%;
+    letter-spacing: -1.3vh;
+  }
+}
+@media (max-width: 1200px) {
+  .head {
+    font-size: 15vh;
+    margin-left: -1%;
+    margin-top: 18%;
+    letter-spacing: -1vh;
+  }
+}
+@media (max-width: 850px) {
+  .head {
+    font-size: 13vh;
+    margin-left: -1%;
+    margin-top: 30%;
+    letter-spacing: -1vh;
+  }
+}
+@media (max-width: 640px) {
+  .head {
+    font-size: 9vh;
+    margin-left: 0%;
+    margin-top: 40%;
+    letter-spacing: -0.4vh;
+  }
+}
+
+@-webkit-keyframes heading {
+  to {
+    opacity: 1;
+  }
+  from {
+    opacity: 0;
+    letter-spacing: 10vh;
+  }
+}
+
+@keyframes heading {
+  to {
+    opacity: 1;
+  }
+  from {
+    opacity: 0;
+    letter-spacing: 10vh;
+  }
+}
+.fas {
+  font-size: 105%;
+  color: red;
+  -webkit-animation: heart 0.5s ease infinite;
+          animation: heart 0.5s ease infinite;
+}
+
+@-webkit-keyframes heart {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1.3);
+  }
+}
+
+@keyframes heart {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1.3);
+  }
+}
+.sub {
+  width: 50%;
+  float: right;
+}
+
+.me {
+  margin-top: 5%;
+  -webkit-animation: photo 2s ease;
+          animation: photo 2s ease;
+}
+@media (max-width: 1430px) {
+  .me {
+    margin-top: 10%;
+    margin-left: 10%;
+  }
+}
+@media (max-width: 1200px) {
+  .me {
+    margin-top: 10%;
+    margin-left: 10%;
+  }
+}
+@media (max-width: 850px) {
+  .me {
+    margin-top: 15%;
+    margin-left: 10%;
+  }
+}
+@media (max-width: 640px) {
+  .me {
+    margin-top: 15%;
+    margin-left: 10%;
+  }
+}
+
+@-webkit-keyframes photo {
+  to {
+    opacity: 1;
+    width: 60%;
+  }
+  from {
+    opacity: 0;
+    width: 0;
+  }
+}
+
+@keyframes photo {
+  to {
+    opacity: 1;
+    width: 60%;
+  }
+  from {
+    opacity: 0;
+    width: 0;
+  }
+}
+.me:hover {
+  transform: scale(1.13);
+}
+
+.caption {
+  font-family: "Courier Prime";
+  color: white;
+  font-size: 2vh;
+  padding: 5vh 0;
+  margin-right: 32vh;
+  line-height: 3.5vh;
+  text-align: left;
+}
+@media (max-width: 1430px) {
+  .caption {
+    font-size: 120%;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 6vh;
+  }
+}
+@media (max-width: 1200px) {
+  .caption {
+    font-size: 110%;
+    margin-top: 0%;
+    margin-left: 10%;
+    margin-right: 6vh;
+  }
+}
+@media (max-width: 850px) {
+  .caption {
+    font-size: 100%;
+    margin-top: 0%;
+    margin-left: 10%;
+    margin-right: 6vh;
+  }
+}
+@media (max-width: 640px) {
+  .caption {
+    font-size: 90%;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 8vh;
+  }
+}
+
+.intro {
+  font-family: "amatic sc";
+  color: black;
+  font-size: 5vh;
+  font-weight: 900;
+  margin-top: 5%;
+  letter-spacing: 1vh;
+}
+@media (max-width: 1430px) {
+  .intro {
+    font-size: 260%;
+    margin-top: 5%;
+  }
+}
+@media (max-width: 1200px) {
+  .intro {
+    font-size: 230%;
+    margin-top: 25%;
+    margin-left: 5%;
+  }
+}
+@media (max-width: 850px) {
+  .intro {
+    font-size: 200%;
+    margin-top: 35%;
+    margin-left: 5%;
+  }
+}
+@media (max-width: 640px) {
+  .intro {
+    font-size: 170%;
+    margin-top: 25%;
+    margin-left: 5%;
+  }
+}/*# sourceMappingURL=style.css.map */
